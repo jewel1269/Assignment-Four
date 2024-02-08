@@ -17,44 +17,101 @@
 //     }
 
 // }
-// const ticketsSold = -15;
+// const ticketsSold = -130;
 // const lastAmount = calculateMoney(ticketsSold);
 // console.log(lastAmount)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // problem-2 //
 
-// function checkName(name){
-// if(typeof name !== 'string'){
-//     return 'invalid'
-// }
-// const lowerCaseName = name.toLowerCase()
-// const jewel = test.includes(checkName('a','y','i','e','o','u','w')lowerCaseName);
+function checkName(name){
+if(typeof name !== 'string'){
+    return 'invalid'
+}
+const lowerCaseName = name.toLowerCase()
+const jewel = test.includes(checkName('a','y','i','e','o','u','w')lowerCaseName);
 
-// if(name.includes(lowerCaseName) && (jewel)){
-//     return 'Good Name';
-// }
-// else{
-//     return 'Bad Name';
-// }
-// }
-// const result = 'habib'
-// const final = checkName(result)
-// console.log(final)
+if(name.includes(lowerCaseName) && (jewel)){
+    return 'Good Name';
+}
+else{
+    return 'Bad Name';
+}
+}
+const result = 'habib'
+const final = checkName(result)
+console.log(final)
+
+
+
+
+
+
+
+
+function checkName(name) {
+  // Check if the input is a string
+  if (typeof name !== 'string') {
+    return 'invalid';
+  }
+
+  // Remove leading and trailing spaces and convert to lowercase
+  const cleanedName = name.toLowerCase();
+
+  // Check if the name ends with A, y, i, e, o, u, w
+  if (cleanedName.endsWith('a') || cleanedName.endsWith('y') || cleanedName.endsWith('i') || cleanedName.endsWith('e')
+   || cleanedName.endsWith('o') || cleanedName.endsWith('u') || cleanedName.endsWith('w')) {
+    return 'Good Name';
+  } else {
+    return 'Bad Name';
+  }
+}
+console.log(checkName('tonmy'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // problem-3//
 
-function deleteInvalids(array){
-if(!Array.isArray(array)){
-    return "Invalid Array"
-}
-const resultArray = array.filter(element => typeof element === 'number' && !isNaN(element));
-return resultArray;
-}
+// function deleteInvalids(array){
+// if(!Array.isArray(array)){
+//     return "Invalid Array"
+// }
+// const resultArray = array.filter(element => typeof element === 'number' && !isNaN(element));
+// return resultArray;
+// }
 
-const jewel = {num: [ 1 , 2 , 3 ]} ;
-const evan = deleteInvalids(jewel);
-console.log(evan)
+// const jewel = {num: [ 1 , 2 , 3 ]} ;
+// const evan = deleteInvalids(jewel);
+// console.log(evan)
 
 
 
@@ -127,6 +184,42 @@ console.log(evan)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 // problem-5 //
 
