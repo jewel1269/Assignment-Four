@@ -44,39 +44,114 @@
 
 // problem-3//
 
-// function deleteInvalids(array){
-// if(!Array.isArray(array)){
-//     return 'Invalid Array'
-// }
-// const resultArray = array.filter(element => typeof element === 'number' && !isNaN(element));
-// return resultArray;
-// }
-
-// const jewel = {num: [ 1 , 2 , 3 ]};
-// const evan = deleteInvalids(jewel);
-// console.log(evan)
-
-// problem-4//
-
-function password(obj){
-    if(typeof obj !== 'object' || !obj. details ('name') || !obj. details ('birthYear') || !obj. details ('siteName') || typeof obj.name !== 'sting' || typeof obj.siteName !=='string' || typeof obj.birthYear !== 'number'){
-        return "thik thak info. de"
-    }
- 
-const password = `${obj.siteName.toUpperCase().charAt(0)}#${obj.name}@${obj.birthYear}`;
-return password;
- 
+function deleteInvalids(array){
+if(!Array.isArray(array)){
+    return "Invalid Array"
+}
+const resultArray = array.filter(element => typeof element === 'number' && !isNaN(element));
+return resultArray;
 }
 
+const jewel = {num: [ 1 , 2 , 3 ]} ;
+const evan = deleteInvalids(jewel);
+console.log(evan)
 
 
 
 
 
-  const result ={
-    name : "kolimuddin",
-    birthYear : 1999,
-    siteName : "google"
-   };
-   const final = password(result);
-console.log(final);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//problem-4//
+
+// function password(obj){
+  
+// if (!obj || typeof obj !== 'object' || !obj.name || !obj.birthYear || !obj.siteName 
+
+// || typeof obj.name !== 'string'  || typeof obj.siteName !== 'string' 
+// || typeof obj.birthYear !== 'number' ||
+// obj.birthYear < 1000 ||
+// obj.birthYear >= 10000
+// ) {
+// return 'invalid';
+// }
+ 
+// const password = `${obj.siteName.charAt(0).toUpperCase() + obj.siteName.slice(1)}#${obj.name}@${obj.birthYear}`;
+// return password;
+ 
+// }
+
+
+
+
+//   const result ={
+//     name : "jewel",
+//     birthYear : 2002,
+//     siteName : "facebook"
+//    };
+//    const final = password(result);
+// console.log(final);
+
+
+
+
+
+
+// problem-5 //
+
+// function  monthlySavings(arr, livingCost){
+
+//   if(!Array.isArray(arr) || typeof livingCost !=='number'){
+//     return "invalid input";
+//   }
+
+//  let payment = 0; 
+//   for (let i = 0; i < arr.length; i++){ 
+//     payment += arr[i];
+// }
+
+//  let govementText = payment >= 3000 ? payment * 0.2 : 0;
+//  let totalPayment = payment - govementText;
+
+// let savings = totalPayment - livingCost;
+  
+//   if(savings >= 0){
+//     return savings;
+//   }
+//   else if(savings < 0){
+//     return "more earn"
+//   } 
+// }
+
+
